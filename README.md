@@ -1,4 +1,6 @@
-# Nutzungsoptimierung von Vorratsräumen einer Pizzeria
+# PizzaPal
+
+Lagersoftware für Pizzerien zum einfache Verwalten von Zutaten, Lagerbeständen und Lageranordnung im Modul "Softwaretechnik"
 
 ![Lageransicht](/doku/readme/Lageransicht.png)
 
