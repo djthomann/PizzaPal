@@ -1,6 +1,6 @@
 # PizzaPal
 
-Lagersoftware für Pizzerien zum einfache Verwalten von Zutaten, Lagerbeständen und Lageranordnung im Modul "Softwaretechnik"
+Lagersoftware für Pizzerien zum einfachen Verwalten von Zutaten, Lagerbeständen und Lageranordnung im Modul "Softwaretechnik"
 
 ![Lageransicht](/doku/readme/Lageransicht.png)
 
