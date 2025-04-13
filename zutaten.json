@@ -1,0 +1,44 @@
+{
+  "Tomate": {
+    "name": "Tomate",
+    "color": {
+      "red": 0.5,
+      "green": 1.0,
+      "blue": 1.0,
+      "opacity": 1.0
+    },
+    "unvertraeglichkeiten": [
+      "Banane",
+      "Kiwi",
+      "Apfel"
+    ]
+  },
+  "Käse": {
+    "name": "Käse",
+    "color": {
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 0.0,
+      "opacity": 1.0
+    },
+    "unvertraeglichkeiten": [
+      "Banane",
+      "Kiwi",
+      "Apfel"
+    ]
+  },
+  "Schokolade": {
+    "name": "Schokolade",
+    "color": {
+      "red": 1.0,
+      "green": 0.0,
+      "blue": 0.0,
+      "opacity": 0.0
+    },
+    "unvertraeglichkeiten": [
+      "Banane",
+      "Kiwi",
+      "Apfel"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+\section{Projektgrundlagen}
+\subsection{Einführung \& Zielstellung}
+\begingroup
+Es soll ein System zur einfachen Verwaltung eines \textbf{\gls{lager}s} von \textbf{\gls{zutat}en}
+einer Pizzeria ersellt werden. Ein Lager ist vereinfacht dargestellt, als zweidimensionaler
+Raum, in dem ein Regal mit Paketen von Zutaten steht. 
+Ein \textbf{\gls{paket}} muss über eine Tragkraft, Maße, ein Gewicht, eine Menge der Zutat
+und eine Liste von Unverträglichkeiten (Zutaten, in deren Nähe die verpackte Zutat schlecht würde) verfügen. 
+Die Pakete werden in einer 
+grafischen Oberflächen vereinfacht als Rechtecke in einer 
+Regalstruktur (ebenfalls aufgebaut aus Rechtecken) verwaltet. Ein \textbf{\gls{regal}} besteht
+dabei aus \textbf{\glspl{stuetze}} und \textbf{\glspl{brett}n}, die vom Nutzer per Drag\&Drop angepasst bzw. umgebaut werden kann
+und so ergeben sich \textbf{\gls{regalabschnitt}e} und \textbf{\gls{regalteil}e}, siehe Abbildung~\ref{fig:Regalmodell} auf Seite~\pageref{fig:Regalmodell}.
+Pakete sollen zunächst als Vorlagen (\textbf{\gls{template}s}) angelegt werden, die dann dem Regal
+per Drag\&Drop hinzugefügt werden. Die Erstellungs- und Bearbeitunsschritte sollen in einer separaten Eingabemaske geschehen.
+Es soll möglich sein, neue Pakete dem 
+Lager hinzuzufügen und diese auch wieder zu löschen (dem Lager zu entnehmen), oder gegebenenfalls anzupassen. Per Drag\&Drop sollen 
+Die Pakete sollen neu angeordnet werden können, ohne, dass dabei ein Brett überlastet wird oder
+ein Paket zusammen mit einer \textbf{\gls{unvertraeglichkeit}} (unvertäglichen Zutat) gelagert wird.
+Pakete sollen auf Bretter gestapelt werden können (\textbf{\gls{stapel}} mehrere Pakete auf einem anderen, aber nicht über die Breite des unteren Pakets hinaus) und dann auch als Stapel verschoben werden können. 
+Probleme beim Umlagern oder Erstellen von Paketen, sowie bei der Regalkonfiguration sollen dem Nutzer grafisch angezeigt werden.
+\endgroup
+\subsection{Rahmenbedingungen \& Technische Anforderungen}
+\begingroup 
+Das Programm benötigt mindestens Java 21 und 8 GB Arbeitsspeicher um zu funktionieren. Für die 
+Grafische Benutzeroberfläche ist eine Bildschirm mit mindestens Full-HD-Auflösung und
+RGB-Farbausgabe. Zur Interaktion mit dem Programm ist eine Maus erforderlich. Die einwandfreie Funktion des
+Programms wird nur unter einer aktuellen (Kubuntu 22.04.4 LTS) Linux-Version
+garantiert. Für die Speicherung des Lagers als Datei ist Speicherplatz von mindestens
+10 GB zur Verfügung zu stellen.

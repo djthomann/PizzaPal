@@ -1,0 +1,22 @@
+@startuml
+!theme plain
+actor Benutzer
+boundary JavaFXApp
+control ButtonHandler
+entity Factory
+entity BrettTemplate
+entity PaketTemplate
+entity StuetzeTemplate
+
+Benutzer -> JavaFXApp : clickButton()
+JavaFXApp -> ButtonHandler : handleButtonClick()
+ButtonHandler -> Factory : createTemplate("Brett")
+Factory -> BrettTemplate : create()
+BrettTemplate --> Factory : BrettTemplate instance
+ButtonHandler -> Factory : createTemplate("Paket")
+Factory -> PaketTemplate : create()
+PaketTemplate --> Factory : PaketTemplate instance
+ButtonHandler -> Factory : createTemplate("Stuetze")
+Factory -> StuetzeTemplate : create()
+StuetzeTemplate --> Factory : StuetzeTemplate instance
+@enduml

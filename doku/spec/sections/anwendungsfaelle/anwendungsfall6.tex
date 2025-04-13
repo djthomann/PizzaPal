@@ -1,0 +1,38 @@
+\subsubsection*{}
+\textbf{Pakete bewegen und löschen}\bigskip\\
+\textbf{Autor}: Aron-Merlin Schlegel\\
+\textbf{Akteure}: Chef, Aushilfskraft\\
+\textbf{Fachlicher Auslöser:} Lager wird aufgeräumt und alte Packungen aussortiert \\
+\textbf{Vorbedingungen: } Pakete sind im Regal aufbewahrt.\\
+\textbf{Standardablauf:} 
+\begin{enumerate}
+    \item Mitarbeiter: Wählt nacheinander Pakete aus, die entsorgt werden sollen und löscht sie
+    \item System: Nimmt Paket aus dem Inventar und löscht Paket-Objekt
+    \item Mitarbeiter: Zieht nacheinander Pakete per Drag \& Drop an einen neuen Platz
+    \item System: Strukturiert Pakete entsprechend in neue Regalabschnitte
+    \item Mitarbeiter: Ist fertig
+    \item System: Weiterhin betriebsbereit
+\end{enumerate}
+\textbf{Alternative Abläufe/ Fehlersituationen / Sonderfälle:}
+\begin{enumerate}
+    \item[] \textbf{2a} Mitarbeiter löscht ein Paket aus Versehen passendes Template.
+    \begin{enumerate}
+        \item[] \textbf{1a1} System bietet eine Funktion, letzte Aktion rückgängig zu machen
+        \item[] \textbf{1a2} weiter bei 2.
+    \end{enumerate}
+    \item[] \textbf{3a} Mitarbeiter kann alle Pakete aus dem Regal nehmen
+    \begin{enumerate}
+        \item[] \textbf{3a1} System legt Pakete in temporäre Ablage
+        \item[] \textbf{3a2} System geht nicht nicht abgespeicherten Zwischenzustand
+        \item[] \textbf{3a3} Mitarbeiter sortiert alles richtig ein und speichert
+        \item[] \textbf{3a4} System legt neue Struktur an und geht wieder in Normalzustand
+    \end{enumerate}
+\end{enumerate}
+\textbf{Nachbedingung/Ergebnis:}\\
+Regal ist jetzt neu sortiert, keine Nachbedingung - Normaler Zustand\\
+\textbf{Nichtfunktionale Anforderungen:}\\
+Reaktionszeit \textless 5 Sekunden.\\
+\textbf{Parametrisierbarkeit/Flexibilität:}\\
+-\\
+\textbf{Nutzungshäufigkeit/Mengengerüst:}\\
+Circa 1x pro Woche\\

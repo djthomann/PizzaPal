@@ -1,0 +1,41 @@
+\subsubsection*{}
+\textbf{Pakete im Regal anordnen}\bigskip\\
+\textbf{Autor}: Aron-Merlin Schlegel\\
+\textbf{Akteure}: Chef, Aushilfskraft\\
+\textbf{Fachlicher Auslöser:} Bestellte Lebensmittel sind im Lager einzuräumen \\
+\textbf{Vorbedingungen: }Pakete sind erstellt und in Template hinterlegt und Regal ist vollständig konfiguriert.\\
+\textbf{Standardablauf:} 
+\begin{enumerate}
+    \item Mitarbeiter: wählt ein vordefiniertes Template aus und zieht es per Drag \& Drop zur gewünschten Position im Lagerregal.
+    \item System: Prüft den ausgewählten Ort auf vier Bedingungen.
+    \begin{enumerate}
+        \item Tragkraft der darunterliegenden Pakete.
+        \item Vorhandener Platz (ausreichend Abstand zu darüberliegender Ablagefläche und Stützen auf linker und/oder auf rechter Seite).
+        \item Tragkraft der Ablagefläche.
+        \item Unverträglichkeiten zu anderen Lebensmitteln die schon auf dieser Ablagefläche (direkt daneben oder darunter) aufbewahrt werden.
+    \end{enumerate}
+    \item System: Wenn Bedingungen erfüllt sind, wird das Paket im Regal platziert.
+    \item System: Inventarliste wird aktualisiert.
+\end{enumerate}
+\textbf{Alternative Abläufe/ Fehlersituationen / Sonderfälle:}
+\begin{enumerate}
+    \item[] \textbf{1a} Mitarbeiter findet kein passendes Template.
+    \begin{enumerate}
+        \item[] \textbf{1a1} erstellt Template nach Beschreibung.
+        \item[] \textbf{1a2} weiter bei 2.
+    \end{enumerate}
+    \item[] \textbf{3a} Es werden nicht alle vier Bedingungen erfüllt.
+    \begin{enumerate}
+        \item[] \textbf{3a1} System gibt entsprechende Fehlermeldungen aus.
+        \item[] \textbf{3a2} System aktualisiert Inventurliste nicht.
+        \item[] \textbf{3a3} Mitarbeiter beginnt wieder bei Punkt 1.
+    \end{enumerate}
+\end{enumerate}
+\textbf{Nachbedingung/Ergebnis:}\\
+Paket wird auf Ablagefläche angezeigt und im Inventar gelistet.\\
+\textbf{Nichtfunktionale Anforderungen:}\\
+Reaktionszeit \textless 5 Sekunden.\\
+\textbf{Parametrisierbarkeit/Flexibilität:}\\
+-\\
+\textbf{Nutzungshäufigkeit/Mengengerüst:}\\
+Bis zu mehrmals täglich.

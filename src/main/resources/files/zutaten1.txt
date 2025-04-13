@@ -1,0 +1,6 @@
+#!/Lagerfile
+#Zutaten
+Tomate,0xff0000ff,Tomate;Käse
+Aubergine,0x800080ff,Tomate;Käse
+Käse,0xffff00ff,Tomate;Käse
+#Unvertraeglichkeiten

@@ -1,0 +1,108 @@
+\section{Abläufe und Funktionen}
+\label{subsec:szenarien}
+\subsection{Anwendungs-Szenarien}
+\newcounter{szn}
+\setcounter{szn}{1}
+\subsubsection*{Szenario \theszn: Pakete erfassen}
+Autor: Nha-Dan Tran\\~\\
+Es kam gerade eine neue Lieferung an Zutaten und die Pizzabäckerin Antonita muss die angekommenen Waren in das System eingeben. Dafür öffnet sie das Programm und wählt in dem Menü das entsprechende Feld aus. Das Programm bietet ihr an, ein komplett neues Paket anzulegen oder einfach bereits registrierte Pakete aus der Vorlage dem Inventar hinzuzufügen. Da sie auf der Wochenkarte etwas neues ausprobieren wollte, muss sie eine neue Paketvorlage erstellen. Dafür klickt sie auf das entsprechende Feld und es öffnet sich eine Maske, in der sie Farbe, Gewicht, Tragkraft, Breite, Tiefe, Höhe und Unverträglichkeiten eintragen und abspeichern kann.
+\stepcounter{szn}
+\subsubsection*{Szenario \theszn: Paketvorlagen bearbeiten}
+Ein Hersteller hat seine Verpackungsgrößen für Dosentomaten reduziert. Aushilfskraft Karla darf die Änderungen in das System übertragen. Statt 500 g sind nur noch 400 g enthalten und auch die Maße haben sich geändert. Über das Menü des Programms greift sie auf die Vorlagen zu und wählt das zu ändernde Paket aus. Über die Maske kann sie dann Breite, Tiefe, Tragkraft und die Dimension der Vorlage anpassen und abspeichern.
+\stepcounter{szn}
+\subsubsection*{Szenario \theszn: Pakete anordnen und löschen}
+Autor: Aron Schlegel\\~\\
+\stepcounter{szn}
+Ein Mitarbeiter einer Pizzeria möchte vordefinierte Pakete in ein ebenso vordefiniertes Lagerregal ziehen. Dazu schaut er in dem dafür vorgesehenen Template nach den gewünschten Lebensmittelpaketen, wählt eins aus und zieht es über den gewünschten Platz im Regal. Der Mitarbeiter lässt das Paket los und bekommt eine Fehlermeldung, dass der vorhandene Platz nicht ausreicht und die Tragkraft des Regalbodens überschritten wird. Er beginnt von vorne und lässt das Paket an einer geeigneteren Stelle los, und sieht es nun im Regal stehen. Im Anschluss gefällt ihm die Anordnung eines anderen Paketes nicht. Er möchte dieses lieber auf zwei schon übereinander gestapelte Pakete stellen, Nach dem er das Paket dorthin gezogen hat bekommt er eine Fehlermeldung das die Tragkraft des untersten Pakets nicht ausreichend ist. Er entscheidet sich es am vorherigen Platz stehen zu lassen. 
+\subsubsection*{Szenario \theszn: Bestehendes Regal wird umgebaut}
+Autor: Aron Schlegel\\~\\
+\stepcounter{szn}
+Der Mitarbeiter einer Pizzeria möchte ein bereits beladenes Lagerregal umbauen/neu anordnen. Dazu wählt er im System den Regal-Bearbeitungsmodus aus, klickt auf das gewünschte Brett (dieses wird farblich hervorgehoben) und gibt dann die neue Maße und die gewünschte Tragkraft in dem dazu vorgesehenen Eingabefeld ein. Das System prüft daraufhin ob die neuen Konfigurationen im bestehenden Regalsystem Sinn ergeben, und meldet einen Fehler. Die Tragkraft ist nicht ausreichend, für die bereits darauf stehenden Pakete. Daraufhin gibt der Mitarbeiter einen höheren Wert ein, bestätigt und das System akzeptiert. Nachdem das Brett nun neu eingerichtet ist, beendet der Mitarbeiter den Regal-Bearbeitungsmodus. 
+\subsubsection*{Szenario \theszn: Regale konfigurieren}
+Autor: David Thomann\\~\\
+Der Pizzabäcker Anton möchte sein Lager mit unserer Software abbilden. In einem ersten Schritt legt er dafür seine Regale an. Dafür öffnet er sein Lager und nimmt und geht in den Regal-Bearbeitungs-Modus. Im Reitermenü legt er neue Templates für Bretter und Stützen an, mit den Maßen wie er sie auch vor Ort hat, die er mit Drag\&Drop zu einem Nachbau seines echten Regals zusammenbaut. Nachdem er fertig ist, kann er mithilfe eines Häkchens den Regal-Bearbeitungs-Modus verlassen und das System legt sein Regal an. 
+\stepcounter{szn}
+\subsubsection*{Szenario \theszn: Inventar anzeigen}
+Autor: David Thomann\\~\\
+Die studentische Aushilfskraft Martin soll einen Abgleich des Lagers mit der Lagerverwaltung machen. Dazu zählt er zuerst die real-existierenden Zutaten im Lager in einer Liste. Danach geht er in die Lager-Verwaltung und öffnet das virtuelle Lager. Über einen Button kann er sich eine aktuelle, nach Zutaten sortierte Auflistung der aktuellen Zutaten anzeigen. Mit dieser Information bringt er das reale Lager und das virtuelle Lager in einem weiteren Schritt wieder auf den selben Stand.
+\newpage
+\subsection{Anwendungsfälle}
+Aus den \hyperref[subsec:szenarien]{\textbf{Anwendungsszenarien}} ergeben sich die folgenden Anwendungsfälle für unsere Software:
+\begin{table}[h!]
+    % \caption[short]{Tabellarische Auflistung unserer Anwendungsfälle}
+    \begin{tabularx}{\textwidth}{l|X}
+            \textbf{Ziele / Funktionen} & \textbf{Kurzbeschreibung} \\
+            \hline
+            Paketvorlage anlegen & Eine Vorlage für ein Paket einer bestimmten Zutat, mit dem dazugehörigen Gewicht, der Tragkraft, den Maßen des Pakets und der Menge an Inhalt anlegen \\
+            \hline
+            Paketvorlage bearbeiten & Das Gewicht, Tragkraft, Menge oder Maße einer Paketvorlage ändern \\
+            \hline
+            Pakete erzeugen & Ein Paket aus einem Template erzeugen und platzieren \\
+            \hline
+            Pakete anordnen & Ein Paket im Regal per Drag\&Drop an einen anderen Ort verschieben \\
+            \hline
+            Pakete löschen & Ein Paket im Regal löschen \\
+            \hline
+            Brett- und Stützenvorlage erzeugen & Vorlagen für Bretter und Stützen anlegen \\
+            \hline
+            Bretter und Stützen erzeugen & Bretter- und Stützenobjekte aus Vorlagen erstellen \\
+            \hline
+            Bestehende Bretter und Stützen anpassen & Bretter und Stützen die bereits existieren anpassen \\
+            \hline
+            Bestehende Bretter und Stützen bewegen & Bretter und Stützen im Raum bewegen \\
+            \hline
+            Regal hinzufügen & In einem leeren Lagerraum ein neues Regal bauen \\
+            \hline
+            Regal bearbeiten & Ein bereits bestehendes Regal umbauen \\
+            \hline
+            Inventarliste anzeigen & Zeigt eine nach Zutaten sortierte Liste der in einem Regal vorhandenen Pakete an \\
+    \end{tabularx}
+\end{table}
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{images/AnwendungsfallDiagramm.png}
+    \captionbelow{Anwendungsfall-Diagramm}
+    \label{fig:AnwendungsfallDiagramm}
+\end{figure}
+\clearpage
+\subsubsection{Beschreibungen von Anwendungsf\"allen}
+\input{./sections/anwendungsfaelle/anwendungsfall1}
+\par\noindent\rule{\textwidth}{0.4pt}
+\input{./sections/anwendungsfaelle/anwendungsfall5}
+\par\noindent\rule{\textwidth}{0.4pt}
+\input{./sections/anwendungsfaelle/anwendungsfall3}
+\par\noindent\rule{\textwidth}{0.4pt}
+\input{./sections/anwendungsfaelle/anwendungsfall2}
+\par\noindent\rule{\textwidth}{0.4pt}
+\input{./sections/anwendungsfaelle/anwendungsfall4}
+\par\noindent\rule{\textwidth}{0.4pt}
+\input{./sections/anwendungsfaelle/anwendungsfall6}
+\subsection{Funktionale Anforderungen}
+Aus den Anwendungsfällen lassen sich folgende Funktionale Anforderungen an das System ableiten:
+\begin{itemize}
+  \item Lager muss in Datei verwaltet werden
+  \item Regal im Lager muss in Regalteile und Regalabschnitte aufgeteilt sein
+  \item Das Regal muss anpassbar bzw. umbaubar sein
+  \item Zutaten müssen eine bearbeitbare Auflistung sein
+  \item Unverträglichkeiten zwischen Zutaten müssen eingestellt werden können
+  \item Templates müssen verwaltet erstellt werden können
+  \item Alle Aspekte der Templates müssen anpassbar sein
+  \item Pakete müssen dem Regal hinzugefügt und gelöscht werden können
+  \item Pakete müssen gestapelt werden können
+  \item Pakete müssen umsortiert werden können, der Regalabschnitt in dem sie sich befinden, muss ermittelt werden können
+\end{itemize}
+\subsection{Nicht-Funktionale Anforderungen}
+\textbf{Zuverlässigkeit und Verfügbarkeit:}
+\begin{itemize}
+  \item Das System sollte lokal auf den Rechnern der Pizzeria laufen
+  \item Daten müssen zuverlässig und persistent gehalten werden
+\end{itemize}
+\textbf{Leistung und Skalierbarkeit:}
+\begin{itemize}
+  \item Drag\&Drop-Vorgänge müssen flüssig ablaufen und Fehlerzustände schnell erkannt und angezeigt werden (\textless 200ms) 
+  \item Es sollte möglich sein, mehrere Lager zu erfassen
+\end{itemize}
+\textbf{Benutzerfreundlichkeit:}
+\begin{itemize}
+  \item Die GUI sollte ohne Fachwissen und Schulung zu bedienen sein (Buttons \& farbliche Hervorhebung von Interaktionspunkten) 
+  \item Es sollte möglich sein, das System auf mehreren Geräteklassen nutzen zu können
+\end{itemize}

@@ -1,0 +1,45 @@
+\documentclass{scrartcl}
+\usepackage[ngerman]{babel} 
+\usepackage{bookmark}
+\usepackage{enumitem}
+\usepackage{float}
+\hypersetup{pdfborder=0 0 0}
+
+
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {./images/} }
+
+\usepackage{glossaries}
+\glstoctrue
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+\usepackage{tabularx}
+
+\title{PizzaPal}
+\subtitle{Architekturdokument}
+\author{David Thomann, Nha-Dan Tran, Aron Schlegel}
+\date{Sommersemester 2024 \\ \today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\begin{figure}[b]
+    \centering
+    \includegraphics[scale=0.2]{hsrm-logo.png}
+\end{figure}
+\newpage
+
+\tableofcontents
+\newpage
+
+\include{sections/einfuehrung/einfuehrung}
+
+\include{sections/randbedingungen/randbedingungen}
+
+\include{sections/kontextabgrenzung/kontextabgrenzung}
+
+\include{sections/bausteinsicht/bausteinsicht}
+
+\include{sections/laufzeitsicht/laufzeitschicht}
+
+\end{document}

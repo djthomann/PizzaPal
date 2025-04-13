@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+
+actor "User" as user
+
+rectangle "PizzaPal" <<System>> {
+    node "GUI" <<JavaFX>> {
+        component "JavaFX Application"
+    }
+
+    node "Core"
+}
+
+node "Storage" <<File>> {
+    component "JSON"
+}
+
+rectangle "Development Environment" <<Gradle>> {
+    component "Build Script"
+}
+
+user --> "JavaFX Application" : interargiert mit
+"JavaFX Application" --> "Core" : calls
+"Core" --> "JSON" : greift zu
+
+"Build Script" --> "JavaFX Application" : builds
+"Build Script" --> "Core" : builds
+@enduml

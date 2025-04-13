@@ -1,0 +1,50 @@
+\subsubsection*{}
+\textbf{Pakete erfassen}\bigskip\\
+\textbf{Autor}: Nha Dan-Tran\\
+\textbf{Akteure}: Akteur\\
+\textbf{Fachlicher Auslöser:} Erfassung der Zutaten im System zur Vorbereitung des effizienten Sortieren\\
+\textbf{Vorbedingungen: }-\\
+\textbf{Standardablauf:} 
+
+\begin{enumerate}
+    \item Akteur: Gibt Art(Bezeichnung), Menge(Anzahl, Int), Farbe(Colourpicker), Gewicht(kg), Tragkraft(kg), Breite x Höhe x Tiefe (cm), Unverträglichkeiten(Liste) ein \label{enum:first}
+    \item System: Validiert Eingaben \label{enum:second}
+    \item System: Erzeugt Paket und Bestätigen lassen
+    \item Akteur: Eingabe bestätigen
+    \item System: Legt Paket im Inventar ab.
+\end{enumerate}
+
+\textbf{Alternative Abläufe/ Fehlersituationen / Sonderfälle:}
+\begin{enumerate}
+    \item[] \begin{enumerate}\setcounter{enumi}{1}
+        \item Akteur wählt direkt ein bereits existierendes Paket aus und passt lediglich die Menge an
+    \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+    \item[] \begin{enumerate}\setcounter{enumi}{2}
+\item System stellt fest, dass es bereits ein Paket mit dieser Bezeichnung gibt und lehnt Erstellung ab
+    \begin{enumerate}
+    \item System schlägt vor, eine neue Vorlage zu erstellen oder Menge eines bereits existierenden Pakets anzupassen
+    \item weiter bei 3
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}\setcounter{enumi}{2}
+\item System lehnt Gewicht oder Dimensionen des Pakets ab, weil sie keinen Sinn ergeben(z.B. 1000 kg oder Maße größer als jegliche Regale). Die entsprechenden Felder werden hervorgehoben
+\item Akteur korrigiert betroffene Eingaben
+\item weiter bei 3
+\end{enumerate}
+
+\textbf{Nachbedingung/Ergebnis:}\\
+Inventar wurde aktualisiert und Pakete sind zur weiteren Verteilung im Regalsystem bereit.
+
+\textbf{Nichtfunktionale Anforderungen:\\
+}Reaktionszeit \textless 5 Sekunden
+
+\textbf{Parametrisierbarkeit/Flexibilität:}\\
+Erstellung von Paketen aus bereits vorhandenen Paketen
+
+\textbf{Nutzungshäufigkeit/Mengengerüst:}\\
+Alle 2-3 Tage, je nach 

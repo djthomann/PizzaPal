@@ -1,0 +1,40 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+/bin
+hs_err_pid*log
+
+# Ignore IDE kram
+/.settings/
+/.classpath
+/.project
+/.vscode
+.DS_Store
+
+# Sachen für LaTeX
+*.glg
+*.glo
+*.gls
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.pdf

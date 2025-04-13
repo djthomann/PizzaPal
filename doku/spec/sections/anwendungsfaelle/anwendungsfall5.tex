@@ -1,0 +1,43 @@
+\subsubsection*{}
+\textbf{Paketvorlage bearbeiten}\bigskip\\
+\textbf{Autor}: Nha Dan-Tran\\
+ \textbf{Akteure}: Chef, Aushilfskraft\\
+ \textbf{Fachlicher Auslöser:} Änderungen der Paketgewichte/größe\\
+ \textbf{Vorbedingungen: }Pakete sind bereits in der Datenbank angelegt\\
+ \textbf{Standardablauf:} 
+
+\begin{enumerate}
+    \item Chef/Aushilfskraft wählt zu bearbeitende Vorlage aus dem Inventar aus
+    \item Chef/Aushilfskraft ändert entsprechende Felder
+    \item System überprüft Eingaben auf Plausibilität
+    \item System lässt Eingaben vom Nutzer nbestätigen
+    \item Chef/Aushilfskraft bestätigt Eingabe
+    \item System aktualisiert die Eingaben in der Datenbank und die Vorlage
+\end{enumerate}
+
+\textbf{Alternative Abläufe/ Fehlersituationen / Sonderfälle:}
+\begin{enumerate}\setcounter{enumi}{3}
+    \item[] \begin{enumerate}
+        \item System akzeptiert Eingabe nicht
+        \begin{enumerate}
+            \item System hebt nicht plausible Eingaben farbig hervor und bittet den Nutzer selbige anzupassen
+            \item Nutzer passt Eingaben an
+            \item System überprüft Eingaben erneut auf Plausibilität
+            \item System akzeptiert Eingaben und lässt den Nutzer bestätigen
+            \item Nutzer bestätigt
+            \item System aktualisiert Datenbank und Vorlage
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\noindent\textbf{Nachbedingung/Ergebnis:}\\
+Inventar wurde aktualisiert und Pakete sind zur weiteren Verteilung im Regalsystem bereit.
+
+\noindent\textbf{Nichtfunktionale Anforderungen:\\}
+Reaktionszeit < 5. sek.
+
+\noindent\textbf{Parametrisierbarkeit/Flexibilität:}\\
+Jedes Paket lässt sich somit individuell anpassen.
+
+\noindent\textbf{Nutzungshäufigkeit/Mengengerüst:}\\
+Ca. 1 mal im Monat.

@@ -1,0 +1,58 @@
+\documentclass{scrartcl}
+\usepackage[ngerman]{babel} 
+\usepackage{bookmark}
+\usepackage{enumitem}
+\usepackage{float}
+
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{ {./images/} }
+
+\usepackage{glossaries}
+\glstoctrue
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+\usepackage{tabularx}
+
+\renewcommand{\labelenumii}{\arabic{enumi}.\alph{enumii}}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\alph{enumii}.\arabic{enumiii}}
+
+\input{glossar}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\title{PizzaPal}
+\subtitle{Anforderungsdokument - Version 1.1}
+\author{David Thomann, Nha-Dan Tran, Aron Schlegel}
+\date{Sommersemester 2024 \\ \today}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\begin{figure}[b]
+    \centering
+    \includegraphics[scale=0.2]{hsrm-logo.png}
+\end{figure}
+\newpage
+
+\tableofcontents
+\newpage
+
+\include{sections/grundlagen}
+
+\include{sections/ablaeufeUndFunktionen}
+
+\include{sections/modell}
+
+\include{sections/schnittstellen}
+
+\printglossaries
+
+\end{document}

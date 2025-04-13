@@ -1,0 +1,44 @@
+\subsubsection*{}
+\textbf{Regal anlegen}\bigskip\\
+\textbf{Autor}: David Thomann\\
+\textbf{Akteure}: Chef, Aushilfskraft\\
+\textbf{Fachlicher Auslöser:} Ein neues Regal wurde aufgebaut und soll jetzt im virtuellen Lager erscheinen\\
+\textbf{Vorbedingungen: }Lager ist noch nicht voll belegt\\
+\textbf{Standardablauf:}
+\begin{enumerate}
+    \item System: Geht in den Regal-Erstellungs-Modus
+    \item Akteur: Erstellt Stützen- und Brettvorlagen, sofern sie noch nicht existieren
+    \item Akteur: Zieht Stützen und Bretter aus der Vorlagenliste per Drag\&Drop und ordnet sie entsprechend des echten Regals ans
+    \item Akteur: Eingabe bestätigen
+    \item System: Legt Regal an
+    \item System: Verlässt Regal-Erstellungs-Modus
+\end{enumerate}
+\textbf{Alternative Abläufe}
+\begin{enumerate}
+    \item[] \begin{enumerate}\setcounter{enumi}{8}
+\item System stellt fest, dass es bereits ein Paket mit dieser Bezeichnung gibt und lehnt Erstellung ab
+    \begin{enumerate}
+    \item System schlägt vor, eine neue Vorlage zu erstellen oder Menge eines bereits existierenden Pakets anzupassen
+    \item weiter bei 3
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\textbf{Fehlersituationen:}
+\begin{enumerate}
+    \item Benutzer wählt Tragkraft für ein Brett, die unter dem Gewicht der aktuellen darauf stehenden Pakete liegt
+    \item Benutzer versucht Regal abzuspeichern ohne Stützen am Anfang/Ende des Regals
+\end{enumerate}
+\textbf{Sonderfälle:}
+\begin{enumerate}
+\item System lehnt neue Maße für Stützen und Bretter ab, da sie keinen Sinn ergeben (negative Werte, Maße, die nicht ins Lager passen). Der Fehler wird grafisch angezeigt.
+\item Akteur korrigiert betroffene Eingaben
+\item weiter bei 6
+\end{enumerate}
+\textbf{Nachbedingung/Ergebnis:}\\
+Das System ist wieder im ursprünglichen Modus, das Regal ist mit allen vorher beinhalteten Zutaten in einem neuen Zustand\\
+\textbf{Nichtfunktionale Anforderungen:}\\
+Plausibitätsfehler werden vom System in max. 200ms angezeigt und können direkt korrigiert werden.\\
+\textbf{Parametrisierbarkeit/Flexibilität:}\\
+-\\
+\textbf{Nutzungshäufigkeit/Mengengerüst:}\\
+1-2 mal pro Jahr
